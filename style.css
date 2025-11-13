@@ -1,0 +1,10 @@
+body {font-family: Arial, sans-serif; line-height: 1.6; margin: 24px;}
+h2 {color: #333;}
+.title {color: #0b66ff;}
+.intro {color: #443;}
+.card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-top: 16px;
+  background-color: #f9f9f9;
+}
