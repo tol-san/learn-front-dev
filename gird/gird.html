@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid System</title>
+    <style>
+        /* display: grid; */
+        /* display: inline-grid */
+        /* grid-templete-columns */
+        .gird-container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            background-color: dodgerblue;
+            padding: 10px 20px;
+        }
+        .gird-container > div {
+            background-color: #f1f1f1;
+            border: solid 1px black;
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+        /* .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        } */
+
+        /* ការតម្រឹម Grid Items */
+        /* grid-column-start */
+        /* grid-column-end */
+        /* grid-row-start */
+        /* grid-row-end */
+        /* gird-column */
+        /* gird-row */
+        /* column-gap */
+        /* row-gap */
+        /* gap */
+
+        /* align-self */
+        .item2 {align-self: end;}
+        
+    </style>
+</head>
+<body>
+    <div class="gird-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+    </div>
+</body>
+</html>
