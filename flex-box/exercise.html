@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {font-family: Arial; margin: 24px;}
+        h1 {margin-bottom: 24px;}
+        .row {
+            display: flex;
+            gap: 12px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+        }
+        .card {
+            padding: 16px;
+            border: 1px solid #ddd;
+            background: #fff;
+            color: #333;
+            flex: 1 1 240px;
+        }
+        .highlight {
+            order: -1;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feature Card</h1>
+
+    <div class="row">
+        <article class="card">Card 1: Responsive Design</article>
+        <article class="card highlight">Card 2: Grows & Wraps</article>
+        <article class="card">Card 3: Clean Spacing</article>
+    </div>
+
+</body>
+</html>
