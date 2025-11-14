@@ -1,0 +1,55 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+    grid-template-columns: 250px 1fr;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+}
+
+header {grid-area: header; background: #049dd9; color: white;}
+aside {grid-area: sidebar; background: #f8f9fa;}
+main {grid-area: main; padding: 1rem;}
+footer{grid-area: footer; background: #212529; text-align: center; color: white;}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 1rem;
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.card {
+    flex: 1 1 250px;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card button {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #049dd9;
+    color: #ffffff;
+}
